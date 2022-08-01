@@ -9,14 +9,23 @@
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/Img.png);
+   
+    background-color: #C4C4C4;
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #C4C4C4;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_sm.jpg);
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_md.jpg);
+     }
 
     @media screen and (min-width: 1200px) {
        max-width: 1200px;
+       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_lg.jpg);
     }
 }
 
