@@ -1,0 +1,218 @@
+.footer__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.footer__container {
+    width: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+}
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-start;  
+        justify-content: space-between;
+    } 
+}
+
+.footer__connection {
+    display: block;
+    align-items: center;
+    
+
+    @media screen and (min-width: 480px) {
+        display: block;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.footer__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 124px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        align-items: flex-start;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--secondary-background-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.footer__addres {
+    margin-top: 0;
+    
+    @media screen and (min-width: 1200px) {
+
+    }
+
+    & .list {
+    margin-right: 0;
+    }
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list {
+    padding-left: 0;
+    margin-top: 0;   
+    margin-bottom: 60px; 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 480px) {
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+
+    & .item {
+        margin-bottom: 9px;
+    }
+    
+    & .item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__adress,
+.footer__contacts {
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+    color: var(--secondary-background-color) 
+}
+
+.footer__contacts {
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color:var(--accent-color);
+    }
+}
+
+.footer__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--secondary-background-color);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    }   
+}
+
+.footer__network {
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}
+
+// network contacts
+.network__contacts {
+    padding-bottom: 0px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        align-items:flex-start;
+
+    }
+
+
+    & > .socials {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.network__joing {
+    margin-bottom: 20px;
+    color: var(--secondary-background-color);
+}
+
+

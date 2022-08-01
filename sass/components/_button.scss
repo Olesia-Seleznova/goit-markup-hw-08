@@ -1,0 +1,27 @@
+.btn {
+    padding: 10px 25px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border: none;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--secondary-background-color);
+    background-color: var(--accent-color);
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color:var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    }
+
+}
+

@@ -1,0 +1,72 @@
+.work .link {
+    display: flex;
+    flex-direction: row;
+    background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+}
+
+.work__list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0%;
+
+    list-style: none;
+
+    & .link + .link {
+        margin-left: 30px;
+    }
+    
+    & .link + .link:not(:last-child) {
+        margin-left: 30px;
+    }
+}
+
+.work {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.work__item {
+   display: block;
+   max-width: 100%; 
+   height: auto;
+   position: relative;
+}
+
+.work__description {
+    font-weight: 700;
+    line-height: 1.14;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-top: auto;
+    margin-bottom: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--secondary-background-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.about {
+    padding-top: 0;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
