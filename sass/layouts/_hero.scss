@@ -23,9 +23,7 @@
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_sm@2x.jpg);
         }
 
-
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
+        @media screen and (min-width: 768px) {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_md.jpg);
     
         @media (min-device-pixel-ratio: 2),

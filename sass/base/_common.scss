@@ -1,15 +1,13 @@
 body {
-    padding-left: 15px;
-    padding-right: 15px;
     font-family: Roboto, sans-serif; 
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
     
-    &.no-scroll {
-        overflow: hidden;
-    }
+    // &.no-scroll {
+    //     overflow: hidden;
+    // }
 }
 
 

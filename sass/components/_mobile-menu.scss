@@ -24,6 +24,7 @@
 } 
 
 .mobile-menu-btn__burger {
+    display: flex;
     transition: 500ms;
 
     .mobile-menu-btn.is-open & {
@@ -33,10 +34,11 @@
 
 .mobile-menu-btn__close {
     opacity: 0;
-    
-.mobile-menu-btn.is-open & {
-    transition: 500ms;
-        opacity: 1;
+
+    .mobile-menu-btn.is-open & {
+        display: flex;
+        transition: 500ms;
+            opacity: 1;
     }
 }
 
@@ -60,6 +62,10 @@
 
     &.is-open {
         transform: translateX(0);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 } 
 
@@ -104,6 +110,10 @@
     & .accent {
         font-size: 34px;
         color: var(--accent-color);
+
+        @media screen and (max-width: 480px) {
+            font-size: 27px;
+        }
     }
 }
 
@@ -111,7 +121,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 
     font-weight: 500;
     font-size: 18px;
