@@ -15,11 +15,11 @@
         max-width: 768px;
         flex-direction: row;
         flex-wrap: wrap;
-
     }
     
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
+        gap: 20px;
         // flex-direction: column;
         // flex-wrap: wrap;
        

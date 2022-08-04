@@ -555,6 +555,7 @@ body {
 @media screen and (min-width: 1200px) {
   .flex__container {
     max-width: 1200px;
+    gap: 20px;
   }
 }
 
