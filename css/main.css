@@ -77,7 +77,8 @@ body {
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
 }
-body.no-scroll {
+
+.no-scroll {
   overflow: hidden;
 }
 
@@ -263,7 +264,7 @@ body.no-scroll {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
-  opacity: 1;
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
@@ -328,8 +329,8 @@ body.no-scroll {
 }
 @media screen and (max-width: 480px) {
   .modal__close {
-    top: -5px;
-    right: -2px;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -912,7 +913,7 @@ body.no-scroll {
 .page .page__auth-nav {
   display: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (-width: 480px) {
   .page .page__auth-nav {
     display: none;
   }
@@ -1709,6 +1710,11 @@ body.no-scroll {
   color: var(--secondary-text-color);
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .callback__title {
+    padding: 0px 10px;
+  }
+}
 @media screen and (min-width: 480px) {
   .callback__title {
     margin-bottom: 12px;
@@ -1987,7 +1993,7 @@ body.no-scroll {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 40px;
-  gap: 8px;
+  gap: 15px;
   padding: 0;
 }
 @media screen and (min-width: 480px) {

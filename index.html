@@ -26,13 +26,12 @@
 
           <button class="mobile-menu-btn" type="button" data-menu-button>
             <svg class="mobile-menu-btn__icon" width="40" height="40">
-              <use
-                clas="mobile-menu-btn__burger"
+              <use class="mobile-menu-btn__burger"
                 href="./images/images-icons/menu.svg#icon-burger_menu"
               ></use>
-
-              <!-- <use clas="mobile-menu-btn_close" href="./images/images-icons/menu.svg#icon-close_menu">
-              </use> -->
+              <use class="mobile-menu-btn__close" 
+                href="./images/images-icons/menu.svg#icon-close_menu">
+              </use>
             </svg>
           </button>
 
@@ -502,7 +501,7 @@
     </footer>
 
     <!--Modal-window-->
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop is-hidden" data-modal>mobile-menu
       <div class="modal">
         <button class="modal__close" type="button" data-modal-close>
           <svg width="11" height="11">
@@ -574,7 +573,7 @@
     </div>
 
     <!--Mobile-menu-->
-    <div class="mobile-menu is-open" data-menu>
+    <div class="mobile-menu" data-menu>
       <ul class="mobile-menu__nav list">
         <li class="mobile-menu__nav-item">
           <a href="./index.html" class="link accent">Студія</a>
