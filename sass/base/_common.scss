@@ -5,9 +5,13 @@ body {
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
     
-    // &.no-scroll {
-    //     overflow: hidden;
-    // }
+    &.no-scroll {
+    overflow: hidden }
 }
+
+
+
+
+
 
 

@@ -1,5 +1,6 @@
 .page__header {
     background-color: var(--secondary-background-color);
+    border: 1px solid #ECECEC;
 }
 
 .page__logo {
@@ -91,8 +92,9 @@
     }
 }
 
-.current {
+.link.current {
     position: relative;
+    color: var(--accent-color);
 
     &::after {
         content: "";

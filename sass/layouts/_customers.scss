@@ -8,13 +8,12 @@
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
     }
-
 }
 
 .customers__icon {
     display: flex;
-    width: 210px;
-    height: 92px;
+    width: 100%;
+    
     align-items: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
@@ -34,6 +33,7 @@
 
     @media screen and (min-width: 480px) {
        width: 210px;
+       height: 92px;
     }
 
     @media screen and (min-width: 768px) {

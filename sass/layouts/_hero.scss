@@ -7,6 +7,7 @@
     margin-left: auto;
     margin-right:auto;
     text-align: center;
+    padding: 118px 0;
    
     background-color: #C4C4C4;
 
@@ -24,6 +25,7 @@
         }
 
         @media screen and (min-width: 768px) {
+       
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_md.jpg);
     
         @media (min-device-pixel-ratio: 2),
@@ -35,7 +37,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-       max-width: 1200px;
+       max-width: 1600px;
+       padding: 200px 0;
        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_lg.jpg);
        
        @media (min-device-pixel-ratio: 2),
@@ -48,7 +51,6 @@
 }
 
 .hero__title {
-    width: 100%;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;

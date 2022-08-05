@@ -77,6 +77,9 @@ body {
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 .section {
   padding-bottom: 60px;
@@ -271,12 +274,17 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-height: 609px;
+  min-height: 575px;
   padding: 15px;
   background-color: var(--secondary-background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 95%;
+  }
 }
 @media screen and (min-width: 480px) {
   .modal {
@@ -692,12 +700,18 @@ body {
 }
 
 .mobile-menu__contacts {
-  margin-bottom: 64px;
+  margin-bottom: 34px;
+  margin-top: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__contacts {
+    margin-bottom: 64px;
+  }
 }
 
 .mobile-menu__contacts-item:not(:last-child) {
@@ -737,6 +751,7 @@ body {
 
 .page__header {
   background-color: var(--secondary-background-color);
+  border: 1px solid #ECECEC;
 }
 
 .page__logo {
@@ -845,10 +860,11 @@ body {
   }
 }
 
-.current {
+.link.current {
   position: relative;
+  color: var(--accent-color);
 }
-.current::after {
+.link.current::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -978,6 +994,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding: 118px 0;
   background-color: #C4C4C4;
   background-repeat: no-repeat;
   background-position: center;
@@ -1005,7 +1022,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
-    max-width: 1200px;
+    max-width: 1600px;
+    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/banner/header_lg.jpg);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner/header_lg.jpg);
   }
@@ -1018,7 +1036,6 @@ body {
 }
 
 .hero__title {
-  width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -1138,7 +1155,7 @@ body {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0%;
+  padding: 0;
   list-style: none;
 }
 .work__list .link + .link {
@@ -1202,6 +1219,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 0;
   }
 }
 
@@ -1339,8 +1357,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 210px;
-  height: 92px;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1365,6 +1382,7 @@ body {
 @media screen and (min-width: 480px) {
   .customers__icon {
     width: 210px;
+    height: 92px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1684,12 +1702,17 @@ body {
 }
 
 .callback__title {
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   font-weight: 700;
   font-size: 19px;
   line-height: 1.15;
   color: var(--secondary-text-color);
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .callback__title {
+    margin-bottom: 12px;
+  }
 }
 
 .callback__username,
@@ -2089,12 +2112,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .flex__container .link {
-    max-width: 768px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .flex__container .link {
-    max-width: 1200px;
+    max-width: 370px;
   }
 }
 
