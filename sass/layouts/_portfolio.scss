@@ -3,22 +3,19 @@
     margin-top: 0;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 40px;
-    gap: 15px;
+    margin-bottom: 46px;
+    gap: 8px;
+    row-gap: 15px;
     padding: 0;
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 14px; 
-    }
-
     @media screen and (min-width: 768px) {
-        margin-bottom: 14px;
+        margin-bottom: 30px;
         justify-content: center;
         flex-wrap: wrap;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 34px;
+        margin-bottom: 50px;
         justify-content: center;
         flex-wrap: nowrap;
     }
@@ -104,7 +101,8 @@
     flex-direction: column;
     border: 1px solid #EEEEEE;
     background-color: var(--secondary-background-color);
-
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
     @media screen and (min-width: 480px) {
         max-width: 450px;
         gap: 30px;

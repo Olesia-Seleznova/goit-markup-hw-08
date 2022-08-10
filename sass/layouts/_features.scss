@@ -1,26 +1,27 @@
 .features {
     padding: 0;
     margin: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    gap: 30px;
 
     @media screen and (min-width: 768px) {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      gap: 30px;
   }
 
    @media screen and (min-width: 1200px) {
       display: flex;
+      flex-direction: row;
       flex-wrap: nowrap;
-      gap: 30px;
       margin-bottom: 0;
   }
 
     &__list {
-   
       @media screen and (min-width: 480px) {
-         max-width: 450px; 
+         max-width: 450px;
       }
         
       @media screen and (min-width: 768px) {
