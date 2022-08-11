@@ -861,11 +861,11 @@ body {
   }
 }
 
-.link .current {
+.link.current {
   position: relative;
   color: var(--accent-color);
 }
-.link .current::after {
+.link.current::after {
   content: "";
   position: absolute;
   bottom: 0;
